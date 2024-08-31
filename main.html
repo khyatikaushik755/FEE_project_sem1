@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>grocery Project</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/icon" href="images/favicon.PNG">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/grocery-header.css">
+    <link rel="stylesheet" href="styles/pages/grocery.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  </head>
+  <body style="background: url(./styles/shared/back.jpg) no-repeat; background-size: cover;">
+    
+    <header class="header">
+
+      <a href="../index.html" class="logo">
+          <img class="groco_logo" src="images/logo.png" alt="THE GROCO LOGO">
+      </a>
+
+      <!--<a href="../index.html" class="headerhome">| Back to Home &#127968; | </a>
+
+      <div class="amazon-header-middle-section">
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search icon" aria-hidden="true"></i>
+          </div>
+         <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button> -->
+      </div>
+
+      <div class="language">
+        <img class="lang" src="images/language.png">
+        <span class="languagetext">  English </span>
+      </div>
+
+      <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart.png">
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+
+
+  </header>
+
+    <div class="main">
+      <div class="products-grid js-products-grid">
+      </div>
+    </div>
+
+     <script type="module" src="scripts/amazon.js"></script>
+  </body>
+</html>
